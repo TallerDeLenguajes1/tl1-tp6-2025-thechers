@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Diagnostics;
 
+using System.Diagnostics;
+
 Console.WriteLine("Hello, World!");
 int a;
 int b;
@@ -92,11 +94,33 @@ if (int.TryParse(preNum3, out num3))
     }
 }
 
+//Ejercicio 3
+Console.WriteLine("Ingrese un numero:");
+string preNum4 = Console.ReadLine();
+double num4,vAbs,Cuad,ParteEnt;
+double radianes,Seno,Coseno,Raiz;
+bool resultado2 = double.TryParse(preNum4, out num4);
 
+if (resultado2)
+{
+    vAbs = Math.Abs(num4);
+    Cuad = num4 * num4;
+    if (num4 >= 0)
+    {
+        Raiz = Math.Sqrt(num4);
+        Console.WriteLine("Raiz del numero ingresado: " + Raiz + Environment.NewLine);
+    }
+    else
+    {
+        Console.WriteLine("No se puede calcular la raiz de un numero negativo");
+    }
 
-
-
-
-
+    radianes = (num4 * 3.14) / 180;
+    Seno = Math.Sin(radianes);
+    Coseno = Math.Cos(radianes);
+    ParteEnt = Math.Truncate(num4);
+    Console.WriteLine("Valor absoluto del numero ingresado: " + vAbs + Environment.NewLine + "Cuadrado del numero: " + Cuad + Environment.NewLine +
+ "Seno del numero: " + Seno + Environment.NewLine + "Coseno del numero: " + Coseno + Environment.NewLine + "Parte entera del numero: " + ParteEnt);
+}
 
 
