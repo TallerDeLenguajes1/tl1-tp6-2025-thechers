@@ -1,7 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Diagnostics;
 
-using System.Diagnostics;
 
 Console.WriteLine("Hello, World!");
 int a;
