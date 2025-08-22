@@ -32,3 +32,20 @@ else
 }
 
 
+//Ejercicio 4
+
+Console.WriteLine("Ingrese una frase: ");
+string cadena1 = Console.ReadLine();
+
+int longitud = cadena1.Length;
+
+Console.WriteLine($"La longitud de la cadena es: {longitud}");
+
+Console.WriteLine("Ingrese una segunda frase: ");
+
+string cadena2 = Console.ReadLine();
+
+string subcadena = cadena2.Substring(5);
+
+
+
