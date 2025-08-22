@@ -10,6 +10,7 @@ b=a;
 Console.WriteLine("valor de a:" +a);
 Console.WriteLine("valor de b:"+b);
 
+
 //Ejercicio 1
 Console.WriteLine("Ingrese un numero:");
 string entrada = Console.ReadLine();
@@ -57,6 +58,12 @@ if (int.TryParse(preNum3, out num3))
                         int suma;
                         suma = num1 + num2; 
                         Console.WriteLine("El resultado de la suma es:" + suma);
+
+                        string x = num1.ToString();
+                        string y = num2.ToString();
+
+                        Console.WriteLine($"La suma entre {x} y {y} es {suma}");
+
                         break;
                     case 2:
                         int resta;
